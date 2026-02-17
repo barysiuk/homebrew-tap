@@ -5,21 +5,21 @@
 class Duckrow < Formula
   desc "Get your ducks in a row - manage AI agent skills across projects"
   homepage "https://github.com/barysiuk/duckrow"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/barysiuk/duckrow/releases/download/v0.1.0/duckrow_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6df2bc84eaeb70361db5d1884a1ec02bcc4875d71d8dda7afddcfda43cc6ca61"
+      url "https://github.com/barysiuk/duckrow/releases/download/v0.2.0/duckrow_0.2.0_darwin_amd64.tar.gz"
+      sha256 "81a7cfb9146f4938c7247fe50ec1d1390688c41ec55594fe34015a43a785af31"
 
       def install
         bin.install "duckrow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/barysiuk/duckrow/releases/download/v0.1.0/duckrow_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5f92f833d41aee17ccaf8204d81fe39a9f7bfe44d147c112ab809575781fc334"
+      url "https://github.com/barysiuk/duckrow/releases/download/v0.2.0/duckrow_0.2.0_darwin_arm64.tar.gz"
+      sha256 "bfc9129b472306d095ee5e1a76be6fd8b28d62e3b35c0159a6b77ef01651d2ab"
 
       def install
         bin.install "duckrow"
@@ -29,15 +29,15 @@ class Duckrow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barysiuk/duckrow/releases/download/v0.1.0/duckrow_0.1.0_linux_amd64.tar.gz"
-      sha256 "220f8121dd33ee48f222d73e2b29e99d6265dfee55f77af25b2a7825e57e66d7"
+      url "https://github.com/barysiuk/duckrow/releases/download/v0.2.0/duckrow_0.2.0_linux_amd64.tar.gz"
+      sha256 "8b6c17c6d529097d92cc70a8459e2bf6bcb584d9cdbf16bc76a99a8d6802e6ce"
       def install
         bin.install "duckrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barysiuk/duckrow/releases/download/v0.1.0/duckrow_0.1.0_linux_arm64.tar.gz"
-      sha256 "324d6bcc291feb606ace7c495aabf77100d7cad6f2823dba642961cfa7a300eb"
+      url "https://github.com/barysiuk/duckrow/releases/download/v0.2.0/duckrow_0.2.0_linux_arm64.tar.gz"
+      sha256 "61d4792ecdef8120b8d9c47e7393c438e7c599ef2affcb80927010ea41a0f828"
       def install
         bin.install "duckrow"
       end
