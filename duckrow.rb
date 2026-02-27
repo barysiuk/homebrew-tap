@@ -11,7 +11,7 @@ class Duckrow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/barysiuk/duckrow/releases/download/v0.3.0/duckrow_0.3.0_darwin_amd64.tar.gz"
-      sha256 "13a1b2bea3d4f657506103ec808108fa052ea1dc078370cb3f9541978a8e07e4"
+      sha256 "bd9e57a024a768e30693d3264a4ecfb1ef67e6f3b81ffbd3863bb3721d66e153"
 
       define_method(:install) do
         bin.install "duckrow"
@@ -19,7 +19,7 @@ class Duckrow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/barysiuk/duckrow/releases/download/v0.3.0/duckrow_0.3.0_darwin_arm64.tar.gz"
-      sha256 "1136be5d8a841324af31aba538888ccd801de681983bc97a6ca3fddfac3fd7c6"
+      sha256 "0e5e3955ed7431b1d054b493c06fbdf8fe08d5b0f1026e9ffbd5acd3f71196b7"
 
       define_method(:install) do
         bin.install "duckrow"
@@ -30,14 +30,14 @@ class Duckrow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/barysiuk/duckrow/releases/download/v0.3.0/duckrow_0.3.0_linux_amd64.tar.gz"
-      sha256 "9736e33614f9eeb1ef9eccb3407d554d55277e121fd9dd4f396e0ce04c68ab72"
+      sha256 "42f562fd6e63c7be35e393bf9ce4e6419a26ce55f06d6bddabbf951c69b2ab94"
       define_method(:install) do
         bin.install "duckrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/barysiuk/duckrow/releases/download/v0.3.0/duckrow_0.3.0_linux_arm64.tar.gz"
-      sha256 "2dbaf96bde52427386403b1b612c5381c3c5ef95e107f73877e54f787c4ad7e9"
+      sha256 "a5da172f4280ca8a73a12e1f51d6a108e3c173498d8cc2f1f8960e87a1004020"
       define_method(:install) do
         bin.install "duckrow"
       end
