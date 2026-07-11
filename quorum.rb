@@ -1,8 +1,8 @@
 class Quorum < Formula
   desc "Command-line interface for Quorum document review and spaces"
   homepage "https://quorum.md"
-  url "https://registry.npmjs.org/@quorum-md/cli/-/cli-0.1.1.tgz"
-  sha256 "e9be44cc5e80c1f76d411066760b60a5748ffe7928c3983262e2d9a43a94571c"
+  url "https://registry.npmjs.org/@quorum-md/cli/-/cli-0.2.0.tgz"
+  sha256 "38ff16143def5bc3994d928e375b326461fc651162eaf7ffc91cc2c14728d71d"
   license "MIT"
 
   depends_on "node"
@@ -13,7 +13,7 @@ class Quorum < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/quorum --version")
-    assert_match '"version": "0.1.1"', shell_output("#{bin}/quorum --json version")
+    assert_match "0.2.0", shell_output("#{bin}/quorum --version")
+    assert_match '"version": "0.2.0"', shell_output("#{bin}/quorum --json version")
   end
 end
